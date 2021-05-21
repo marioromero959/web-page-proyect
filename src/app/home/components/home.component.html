@@ -1,0 +1,81 @@
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+
+<app-header></app-header>
+
+<!-- Contenido del home -->
+<h1>Bienvenidos</h1>
+<div class="container">
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio quidem expedita dolorum, hic iusto eveniet! Quisquam minus, maxime eligendi eum esse amet nobis earum, quaerat qui, laboriosam alias expedita dolores! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta sunt eveniet, necessitatibus veniam voluptatum ipsum molestias libero nemo tempore reiciendis optio est ut reprehenderit quas possimus error perspiciatis itaque odio? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, animi exercitationem. Blanditiis eveniet iusto, dignissimos alias delectus consequatur earum nisi! Perspiciatis modi dolorum, ad itaque vitae laborum ducimus dolorem. Magni!
+</p>
+<img src="../../../assets/psico.jpg" alt="Psicologia">
+</div>
+    <hr>
+<!-- Seccion quienes somos -->
+    <section>
+        <div class="container-quienes">
+        <h3>Quienes Somos</h3>
+    </div>
+        <div class="container-quienes-somos">
+            <img src="../../../assets/foto1.png" alt="Psicologo1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam exercitationem ab nesciunt magni! Ipsam hic numquam nostrum sapiente veniam assumenda qui natus? Ullam placeat qui fugit architecto laboriosam nihil sint. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur corporis similique voluptatem animi recusandae? Voluptate labore expedita necessitatibus distinctio voluptatem vitae. Hic dolores obcaecati aliquam deserunt quae perspiciatis dignissimos assumenda.</p>
+            <img src="../../../assets/foto2.png" alt="Psicologo2">            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta fuga neque voluptate expedita possimus nisi aliquid mollitia accusantium veritatis velit, recusandae quasi quisquam nihil aspernatur culpa ipsum. Corrupti, dignissimos deserunt? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione quo voluptatem iusto libero magnam rem explicabo, totam quidem magni ducimus facilis dolorem similique est illo tempora illum. Repellendus, quo! Debitis!</p>
+        </div>
+    </section>
+    <hr>
+<!-- Seccion que hacemos -->
+    <section>
+        <div class="container-hacemos">
+            <h3>Que Hacemos</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloremque sunt enim adipisci tempora sint aperiam. Error, est, natus reprehenderit aperiam libero commodi minima architecto soluta quisquam ab hic harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nobis eveniet quis autem cum eligendi, ea pariatur dolorum nostrum atque accusantium beatae illo non temporibus ratione perspiciatis, illum quos possimus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet blanditiis eos doloremque deserunt, rerum necessitatibus cum in perspiciatis dignissimos eligendi dolor non odit explicabo iure nulla iste eaque aliquid debitis! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas fugiat omnis consequuntur similique quibusdam doloribus non sit facilis optio iste dignissimos, temporibus rerum amet, a placeat totam odit laudantium incidunt! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis esse eaque nulla cum ex doloremque voluptatibus, necessitatibus ea suscipit! Perspiciatis asperiores atque iure porro ipsa, pariatur officia aliquid corrupti adipisci.</p>
+        </div>
+    </section>
+    <hr>
+<!-- Seccion contacto -->
+    <section>
+        <div class="container-contacto">
+            <h3>Contactanos</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consequatur dolore recusandae Lorem ipsum dolor sit amet, consectetur adipisicing </p>
+        </div>
+        <h4 class="redes" >Redes Sociales</h4>
+        <div class="contacto">
+        <div class="contacto1 rounded shadow">
+            <h4>Instagram</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum asperiores tempore reiciendis</p>
+            <a href="https://www.instagram.com/">
+                <img src="../../../assets/logoinsta.png" alt="">
+            </a>
+        </div>
+        <div class="contacto2 rounded shadow">
+            <h4>Twitter</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum asperiores tempore reiciendis</p>
+            <a href="https://twitter.com/home">
+                <img src="../../../assets/logotw.png" alt="">
+            </a>
+        </div>
+        <div class="contacto3 rounded shadow">
+            <h4>Whatsapp</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum asperiores tempore reiciendis</p>
+          <a href="https://www.whatsapp.com/">
+              <img src="../../../assets/logowpp.png" alt="">
+          </a>
+        </div>
+    </div>
+        <h4 class="redes">O podes contactarte con nosotros via e-mail</h4>
+    <div class="formu">
+        <div class="mb-3">
+            <label class="form-label">Ingrese su email</label>
+            <input [formControl]= "email" type="email" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="correo@ejemplo.com">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+            <textarea [formControl]= "mensaje" class="form-control form-control-lg " id="exampleFormControlTextarea1" rows="3"></textarea>
+            <button type="button" class="btn btn-success" [disabled]= "email.invalid"  (click)= "emailEnviado()">Enviar</button>
+          </div>
+    </div>
+
+</section>
+
+<app-footer></app-footer>

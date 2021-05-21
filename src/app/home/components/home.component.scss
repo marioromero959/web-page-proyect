@@ -1,0 +1,158 @@
+//Seccion Presentacion
+.menu{
+background-color:red;
+font-size:250px;
+padding:0px;
+margin:0px;
+}
+h1{
+    margin-top: 80px;
+    margin-bottom: 40px;
+    text-align:center;
+    font-family: 'Karla', sans-serif;
+}
+.container{
+    display:flex;
+    justify-content: space-around;
+    margin:auto;
+}
+.container img{
+    float:left;
+    margin-bottom: 20px;
+}
+
+p {
+    width:82%;
+    margin: 20px;
+}
+img{
+    width:50%
+}
+
+//Seccion quienes somos
+.container-quienes-somos{
+    display:flex;
+ //   flex-wrap: wrap;
+    justify-content: center;
+    margin:auto;
+    padding:20px;
+}
+.container-quienes-somos img{
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    padding:40px;
+}
+ .container-quienes h3{
+    margin-bottom: 0px;
+    text-align:center;
+    font-family: 'Karla', sans-serif;
+    font-size: 42px;
+    background-color: rgb(255, 225, 127);
+    display: block;
+    margin: 0px 250px 0px 250px;
+
+}
+
+//Seccion que hacemos
+.container-hacemos h3{
+    background-color:rgb(219, 152, 89) ;
+    color: #000;
+    margin-bottom: 0px;
+    font-size: 42px;
+    font-family: 'Karla', sans-serif;
+    text-align: center;
+    margin: 0px 250px 0px 250px;
+}
+.container-hacemos p{
+    padding: 25px;
+    margin: auto;
+    margin-top: 15px;
+}
+hr{
+    margin:30px;
+}
+
+//Seccion contacto
+.container-contacto h3 {
+    font-size:40px;
+    text-align: center;
+    font-family: 'Karla', sans-serif;
+}
+.container-contacto p{
+  margin: auto;
+  margin-bottom: 20px;
+    text-align: center;
+}
+.contacto{
+display:flex;
+flex-wrap: wrap;
+justify-content:space-around;
+border-radius:15px;
+}
+.contacto a:hover{
+    filter: opacity(0.5);
+    transition: .5s filter;
+}
+.contacto img{
+    width:50px;
+    height: 50px;
+    align-items: center;
+    border-radius:50%;
+}
+.contacto1{
+    text-align: center;
+    width:33%;
+    background-color: rgb(238, 227, 241);
+    padding: 25px;
+}
+.contacto2{
+    text-align: center;
+    width:33%;
+    background-color: rgb(227, 238, 241);
+    padding: 25px;
+}
+.contacto3{
+    text-align: center;
+    width:33%;
+    background-color: rgb(229, 241, 227);
+    padding: 25px;
+}
+.container-contacto h4{
+    margin-left: 50px;
+}
+.formu{
+    background-color:rgb(146, 146, 146);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+textarea {
+    margin-bottom: 20px;
+}
+.form-control-lg{
+    width:400px;
+}
+.redes{
+    margin: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.form-label{
+    margin: 15px;
+}
+
+@media ( max-width:480px ) {
+    .container-quienes-somos{
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contacto{
+        display: flex;
+        flex-direction: column;
+        width:1450px;
+    }
+}
