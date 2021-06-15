@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { AboutModule } from './about/about.module';
 
@@ -18,7 +19,9 @@ import {SharedModule} from './shared/shared.module';
     HomeModule,
     ContactModule,
     SharedModule,
-    AboutModule
+    AboutModule,
+    ReactiveFormsModule,
+    FormsModule
 ],
   providers: [],
   bootstrap: [AppComponent]

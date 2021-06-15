@@ -3,15 +3,20 @@ import { CommonModule } from '@angular/common';
 
 import { ContactRoutingModule } from './contact-routing.module';
 import {ContactComponent} from './components/contact.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [
-		ContactComponent
-	],
+  ContactComponent
+],
   imports: [
     CommonModule,
-    ContactRoutingModule
+    ContactRoutingModule,
+    ReactiveFormsModule
+  ],
+  exports: [
+    ContactComponent
   ]
 })
 export class ContactModule { }

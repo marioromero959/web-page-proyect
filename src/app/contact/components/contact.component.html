@@ -1,1 +1,43 @@
-<p>contact works!</p>
+<section class="bg">
+    <div class="container-contacto">
+        <h3>Contactanos</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consequatur dolore recusandae Lorem ipsum dolor sit amet, consectetur adipisicing </p>
+    </div>
+    <div class="container">
+        <div class="contacto">
+     <div class="contacto1">
+        <h4>Instagram</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum asperiores tempore reiciendis</p>
+        <a href="https://www.instagram.com/">
+            <img src="../../../assets/logoinsta.png" alt="">
+        </a>
+    </div>
+    <div class="contacto2">
+        <h4>Twitter</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum asperiores tempore reiciendis</p>
+        <a href="https://twitter.com/home">
+            <img src="../../../assets/logotw.png" alt="">
+        </a>
+    </div>
+    <div class="contacto3">
+        <h4>Whatsapp</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum asperiores tempore reiciendis</p>
+      <a href="https://www.whatsapp.com/">
+          <img src="../../../assets/logowpp.png" alt="">
+      </a>
+    </div>
+</div>
+<div class="formu">
+    <div class="mb-3">
+        <label class="form-label">Ingrese su email</label>
+        <input [formControl]= "email" type="email" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="correo@ejemplo.com">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+        <textarea [formControl]= "mensaje" class="form-control form-control-lg " id="exampleFormControlTextarea1" rows="3"></textarea>
+        <button type="button" class="btn btn-success" [disabled]= "email.invalid"  (click)= "emailEnviado()">Enviar</button>
+      </div>
+</div>
+
+</div>
+</section>

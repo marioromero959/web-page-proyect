@@ -1,0 +1,89 @@
+.bg{
+    padding: 0%;
+    margin: 0%;
+    background-color:#f2ebe6;
+    height: 100vh;
+}
+.container{
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    justify-content:flex-start;
+    border: 2px solid red;
+    max-width: 100%;
+    height: 75%;
+    position: relative;
+}
+
+.container-contacto {
+    p{
+  margin: auto;
+  margin-bottom: 20px;
+  text-align: center;
+    }
+    h3 {
+    font-size:40px;
+    text-align: center;
+    font-family: 'Karla', sans-serif;
+    }
+    h4{
+        margin-left: 50px;
+    }
+}
+.contacto{
+position: absolute;
+left: 50%;
+flex-wrap: wrap;
+justify-content:space-around;
+height: 100%;
+margin: 0%;
+padding: 0%;
+    img{
+    width:50px;
+    height: 50px;
+    align-items: center;
+    border-radius:50%;
+    }
+}
+.contacto1{
+    text-align: center;
+    max-width:100%;
+    height: 33.3%;
+    background-color: rgb(238, 227, 241);
+    padding: 25px;
+}
+.contacto2{
+    text-align: center;
+    max-width:100%;
+    height: 33.3%;
+    background-color: rgb(227, 238, 241);
+    padding: 25px;
+}
+.contacto3{
+    text-align: center;
+    max-width:100%;
+    height: 33.3%;
+    background-color: rgb(229, 241, 227);
+    padding: 25px;
+}
+
+.formu{
+    position: absolute;
+    max-width: 50%;
+    margin:0%;
+    padding:0%;
+    background-color:#f2ebe6;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+textarea {
+    margin-bottom: 20px;
+}
+.form-control-lg{
+    width:400px;
+}
+
+.form-label{
+    margin: 15px;
+}
