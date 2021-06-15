@@ -4,30 +4,45 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consequatur dolore recusandae Lorem ipsum dolor sit amet, consectetur adipisicing </p>
     </div>
     <div class="container">
+       
         <div class="contacto">
-     <div class="contacto1">
-        <h4>Instagram</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum asperiores tempore reiciendis</p>
+     <div class="redes">
+        <a href="https://www.instagram.com/">
+            <img src="../../../assets/logoubi.png" alt="">
+        </a>
+        <p>Direccion</p>
+    </div>
+    <div class="redes">
+        <a href="https://www.instagram.com/">
+            <img src="../../../assets/logotel.png" alt="">
+        </a>
+        <p>Telefono</p>
+    </div>
+    <div class="redes">
+        <a href="https://twitter.com/home">
+            <img src="../../../assets/logoemail.png" alt="">
+        </a>
+        <p>Correo</p>
+    </div>
+    <div class="redes">
         <a href="https://www.instagram.com/">
             <img src="../../../assets/logoinsta.png" alt="">
         </a>
+        <p>Instagram</p>
     </div>
-    <div class="contacto2">
-        <h4>Twitter</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum asperiores tempore reiciendis</p>
-        <a href="https://twitter.com/home">
-            <img src="../../../assets/logotw.png" alt="">
-        </a>
-    </div>
-    <div class="contacto3">
-        <h4>Whatsapp</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum asperiores tempore reiciendis</p>
-      <a href="https://www.whatsapp.com/">
-          <img src="../../../assets/logowpp.png" alt="">
-      </a>
+    <div class="redes">
+        <a href="https://www.whatsapp.com/">
+            <img src="../../../assets/logofb.png" alt="">
+        </a> 
+        <p>Facebook</p>
     </div>
 </div>
+
 <div class="formu">
+    <div class="mb-3 ">
+        <label class="form-label">Nombre</label>
+        <input [formControl]= "name" type="text" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="nombre">
+      </div>
     <div class="mb-3">
         <label class="form-label">Ingrese su email</label>
         <input [formControl]= "email" type="email" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="correo@ejemplo.com">

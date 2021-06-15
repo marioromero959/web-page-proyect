@@ -11,8 +11,14 @@ export class ContactComponent implements OnInit {
 
   email: FormControl;
   mensaje: FormControl;
+  name: FormControl;
 
   constructor(private router: Router) {
+
+
+    this.name = new FormControl( '', [
+      Validators.required
+    ]);
 
     this.email = new FormControl('', [
       Validators.required,
@@ -27,7 +33,8 @@ export class ContactComponent implements OnInit {
   }
 
   emailEnviado() {
-    if (this.email.valid && this.mensaje.valid){
+    if (this.email.valid && this.mensaje.valid && this.name.valid){
+      console.log(this.name.value);
       console.log(this.email.value);
       console.log(this.mensaje.value);
       alert('Su mensaje ha sido enviado con exito');
