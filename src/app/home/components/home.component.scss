@@ -29,23 +29,89 @@ h1{
 }
 
 //Seccion que hacemos
-.container-hacemos h3{
-    background-color:rgb(219, 152, 89) ;
-    color: #000;
+.container-hacemos{
+    height: 100vh;
+    background-color: #f2ebe6;
+    display:flex;
+    position: relative;
+    align-items: center;
+    .content p{
+        color: #565255;
+        position: relative;
+        padding: 250px;
+        padding-top: 20px;
+        text-align: center;
+        z-index:0;
+    }
+.lb {
+    position: absolute;
+    width: 200px;
+    margin:25px;
+    left: 1250px;
+    height: 200px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background:
+    #dec9b8;
+}
+.brown {
+    position: absolute;
+    width: 100px;
+    margin:25px;
+    left: 1150px;
+    top:250px;
+    height: 100px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background:#dbe1dd;
+}
+.pink1 {
+    position: absolute;
+    width: 150px;
+    margin:25px;
+    height: 150px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background:#e8ccca;
+}
+.pink2 {
+    position: absolute;
+    width: 200px;
+    left: 1200px;
+    top:-20px;
+    margin:25px;
+    height: 200px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background:#e8ccca;
+}
+.red {
+    position: absolute;
+    top: 180px;
+    left: 50px;
+    width: 180px;
+    margin:25px;
+    height: 180px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background:#dfbdb0;
+}
+h3{
+    color: #565255;
+    background-color: #f2ebe6;
     margin-bottom: 0px;
     font-size: 42px;
     font-family: 'Karla', sans-serif;
     text-align: center;
-    margin: 0px 250px 0px 250px;
+    margin-bottom: 25px;
 }
-.container-hacemos p{
-    padding: 25px;
-    margin: auto;
-    margin-top: 15px;
-}
-hr{
-    margin:30px;
-}
+ }
+
 
 //Seccion contacto
 .container-contacto h3 {
