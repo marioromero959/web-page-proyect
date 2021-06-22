@@ -9,16 +9,16 @@
                 <div class="nav ms-auto">
                   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#home">Inicio</a>
+                      <a class="nav-link active" (click)= "toHome()"  href="#home">Inicio</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" routerLink="active" href="#about">Quienes Somos</a>
+                      <a class="nav-link" routerLink="active" (click)= "toAbout()" href="#about">Quienes Somos</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" routeLink="active" href="#mision">Mision</a>
+                      <a class="nav-link" routeLink="active" (click)= "toMision()" href="#mision">Mision</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" click="toContact()" routerLink="active" href="#contact">Contacto</a>
+                      <a class="nav-link" click="toContact()" (click)= "toContact()" routerLink="active" href="#contact">Contacto</a>
                     </li>
                   </ul>
                 </div>

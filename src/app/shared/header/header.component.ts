@@ -11,5 +11,16 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(){
   }
-
+toHome(){
+  document.getElementById('home').scrollIntoView({behavior: 'smooth'});
+}
+toAbout(){
+  document.getElementById('about').scrollIntoView({behavior: 'smooth'});
+}
+toMision(){
+  document.getElementById('mision').scrollIntoView({behavior: 'smooth'});
+}
+toContact(){
+  document.getElementById('contact').scrollIntoView({behavior: 'smooth'});
+}
 }
