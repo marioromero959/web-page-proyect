@@ -35,6 +35,10 @@ h1{
         margin: 135px;
         text-align: center;
     }
+    img{
+        width: 700px;
+        height: 500px;
+    }
 }
 
 //Seccion Quienes Somos
@@ -89,16 +93,16 @@ h1{
     position: absolute;
     z-index: 1;
     bottom:0px;
-    left: 60%;
-    width:450px;
-    height:450px;
-    transition: 0.8s;
+    left: 55%;
+    width:680px;
+    height:550px;
+    transition: 1.2s;
 }
 .container .card:hover img {
-    left: 10%;
+    left: 0%;
     z-index: 1;
-    height: 450px;
-    width: 450px;
+    height: 550px;
+    width: 600px;
 }
 
 .container .card:hover .content {
@@ -220,8 +224,6 @@ h1{
  }
 
  //Seccion Contacto
-
-
 .container-contacto {
     background-color: #f2ebe6;
     position: relative;
