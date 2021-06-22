@@ -20,12 +20,14 @@
   margin: auto;
   margin-bottom: 20px;
   text-align: center;
+  font-family: 'Raleway';
+  font-size: 20px;
     }
     h3 {
     color: #565255;
     font-size:40px;
     text-align: center;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Raleway', sans-serif;
     }
     h4{
         color: #565255;
@@ -43,7 +45,7 @@ height: 100%;
 margin: 0%;
 padding: 0%;
 width: 50%;
-border: 1px solid red;
+//border: 1px solid red;
 
     img{
     width:50px;
@@ -54,25 +56,27 @@ border: 1px solid red;
     .redes{
         display: flex;
         justify-content:center;
-        border: 1px solid red;
+//        border: 1px solid red;
         max-width: 100%;
         padding: 30px;
         position: relative;
         p{
+            color: #fff;
+            font-size: 25px;
             position: absolute;
-            top: 15px;
-            color: #565255;
-            opacity: 1;
+            top: 5px;
+            background-color: #daa598;
+            opacity: 0;
             visibility: visible;
             transition: 0.5s;
-            padding: 30px 150px 30px 150px;
-            border: 1px solid green;
+            padding: 25px 110px 25px 110px;
+            border-radius:1ch;
         }
         p:hover{
             visibility: visible;
             opacity: 1;
             color: #fff;
-            margin-left: 155px;
+          margin-right: 255px;
         }
 
     }
