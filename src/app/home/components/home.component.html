@@ -6,6 +6,7 @@
 <app-header></app-header>
 
 <!-- Contenido del home -->
+<section>
 <div class="container">
     <div class="cabecera">
     <h1>Accede a nuestros cursos</h1>
@@ -13,40 +14,111 @@
     </div>
 <img src="../../../assets/psico1.jpg" alt="Psicologia">
 </div>
-    
+</section>
+
 <app-about></app-about>
 
 <!-- Seccion Quienes Somos -->
-
+<section class="bg">
+    <h3>Quienes Somos</h3>
+<div class="container">
+      <div class="card">
+          <div class="content">
+              <p>Somos Lic. Luciana Caruso y Lic Sebastián Segui, profesionales de la psicología, especialistas en el abordaje del trauma y la disociación, con amplia experiencia clínica. Somos amigos que comparten una mirada similar sobre la práctica profesional empática y compasiva y la pasión por la formación de terapeutas comprometidos. ( en acompañar en procesos de sanación)   </p>
+              <img src="../../../assets/foto1.png" alt="Psicologo2" class="one">
+              <p>Esta misma pasión nos llevó a  crear el centro PEyC. El cual brinda capacitación, supervisión y acompañamiento  a terapeutas, con el objetivo de conformar un perfil integrador que combina los últimos avances sobre neurociencia, distintos modelos y técnicas de psicología, trauma y disociación, aunando el mindfulness y las prácticas contemplativas, como así también diferentes propuestas de tratamiento psicoterapéutico para todo aquel que quiera transformar su vida.
+            Es de esta manera que integramos distintos modelos psicológicos,  técnicos y espirituales ya que consideramos fundamental  la coherencia del terapeuta, la empatía y la compasión para estar en absoluto servicio al otro.</p>            
+          </div>
+      </div>
+</div>
+</section>
 
 
 
 <!-- Seccion Mision -->
-
-    <section id="mision">
-        <div class="container-vision">
+<section id="mision">
+    <div class="container">
             <div class="circle">
-            <span class="lb"></span>
-            <span class="brown"></span>
-            <span class="pink1"></span>
-            <span class="red"></span>
-            <span class="pink2"></span>
-        </div>
-            <div class="content">
-                <div class="container">
+                <span class="lb"></span>
+                <span class="brown"></span>
+                <span class="pink1"></span>
+                <span class="red"></span>
+                <span class="pink2"></span>
+            </div>
+
+            <div class="content1">
+                <div class="mision">
                     <h3>Mision</h3>
                     <p>Nos moviliza formar a terapeutas que ayuden a las personas a transformar su padecimiento diario en libertad y armonía.
                     Conformamos este centro porque creemos que la presencia del terapeuta en estado de conciencia plena, empático y compasivo es lo que le permite al paciente abrirse de manera confiada a su dolencia, a su situación traumática, transitarla para transformarla y que evolucione hacia un estado de integración, y por lo tanto, de plenitud.</p>
                 </div>
-                <div class="container">
+                <div class="vision">
                     <p>Ser referentes en la comunidad de terapeutas de trauma y de disociación, empatía y compasión. Contribuyendo a través de nuestras formaciones a que los profesionales sean más coherentes, más empáticos, más compasivos, y por   sobre todo, más comprometidos con su presencia plena, para con el paciente.</p>
-                    <h3>Vision</h3>
-                    
+                    <h3>Vision</h3>        
                 </div>
         </div>
-        </div>
-    </section>
+    </div>
+</section>
     
+<!-- Seccion Contacto -->
+<section class="bg-contact">
+    <div class="container-contacto">
+        <h3>Contactanos</h3>
+        <p>Contactate con nosotros mediante </p>
+    </div>
+    <div class="container">
+        <div class="contacto">
+             <div class="redes">
+                <a href="https://www.instagram.com/">
+                <img src="../../../assets/logoubi.png" alt="">
+                </a>
+                <p>Av Dondesea 123</p>
+            </div>
+            <div class="redes">
+                <a href="https://www.instagram.com/">
+                <img src="../../../assets/logotel.png" alt="">
+                </a>
+                <p>3704-123456</p>
+            </div>
+            <div class="redes">
+                <a href="https://twitter.com/home">
+                <img src="../../../assets/logoemail.png" alt="">
+                </a>
+                <p>email@correo.com</p>
+            </div>
+        <div class="redes">
+            <a href="https://www.instagram.com/">
+            <img src="../../../assets/logoinsta.png" alt="">
+            </a>
+            <p>@psicologia</p>
+        </div>
+        <div class="redes">
+            <a href="https://www.whatsapp.com/">
+            <img src="../../../assets/logofb.png" alt="">
+            </a> 
+            <p>Los Psicologos</p>
+        </div>
+</div>
+
+<div class="formu">
+    <div class="mb-3 ">
+        <label class="form-label">Nombre</label>
+        <input [formControl]= "name" type="text" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="nombre">
+      </div>
+    <div class="mb-3">
+        <label class="form-label">Ingrese su email</label>
+        <input [formControl]= "email" type="email" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="correo@ejemplo.com">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+        <textarea [formControl]= "mensaje" class="form-control form-control-lg " id="exampleFormControlTextarea1" rows="3"></textarea>
+        <button type="button" class="btn btn-success" [disabled]= "email.invalid"  (click)= "emailEnviado()">Enviar</button>
+      </div>
+</div>
+
+</div>
+</section>
+
 <app-contact></app-contact>
     
 <app-footer></app-footer>
