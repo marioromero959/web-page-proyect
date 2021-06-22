@@ -222,7 +222,10 @@ h1{
 
 .container-contacto {
     background-color: #f2ebe6;
+    position: relative;
     p{
+  position: relative;
+  bottom: -60px;
   color: #565255;
   margin: auto;
   text-align: center;
@@ -230,6 +233,8 @@ h1{
   font-size: 20px;
     }
     h3 {
+    position: relative;
+    bottom: -60px;
     color: #565255;
     font-size:40px;
     text-align: center;
