@@ -1,3 +1,11 @@
-ul li{
-    margin-right: 35px;
+nav{
+    background-color: #d7dce5;
+}
+a{
+    margin: 0 50px;
+}
+@media(max-width:480px){
+    a{
+        margin: 0;
+    }
 }

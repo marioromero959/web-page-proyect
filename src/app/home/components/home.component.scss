@@ -1,356 +1,40 @@
-body{
-    margin: 0%;
-    padding: 0%;
-}
-.bg{
-    background-color: #f2ebe6;
-}
-
-//Seccion Presentacion
-.menu{
-    font-size:250px;
-    padding:0px;
-    margin:0px;
-}
-h1{
-    position: relative;
-    margin-top: 80px;
-    margin-bottom: 40px;
-    text-align:center;
-    font-family: 'Raleway', sans-serif;
-    color: #565255;
-    width: max-content;
-}
-h1::before,
-h1::after{
-    content: '';
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    position: absolute;
-}
-h1::before{
-    background: #f2ebe6;
-    animation: typewriter 4s steps(25) infinite forwards;
-}
-h1::after{
-    width: 0.105em;
-    background: #000;
-    animation: typewriter 4s steps(25) infinite forwards,
-    blink 500ms steps(25) forwards infinite;
-}
-
-@keyframes typewriter{
-    to{
-        left: 100%;
-    }
-}
-@keyframes blink{
-    to{
-        background: transparent;
-    }
-}
-
-
 .container{
-    max-width: 100%;
-    height: 100vh;
-    margin:0px;
-    padding: 0%;
-    align-items: center;
-    padding-top: 55px;
-    display:flex;
-    justify-content: center;
-    background-color: #f2ebe6;
-    
-    .cabecera{
-        margin: 135px;
-        text-align: center;
-        }
-        img{
-        width: 700px;
-        height: 500px;
-        }
-}
-
-
-
-//Seccion Quienes Somos
-.bg h3{
-    position: relative;
-    bottom: -95px;
-    margin-left:670px;
-    font-family: 'Raleway';
-    color: #565255;
-    font-size: 32px;
-}
-.card{
-    position: relative;
-    display:flex;
-    height: 500px;
-    justify-content: center;
-    margin:40px;
-    border-radius: 0%;
-    padding:40px;
-    justify-content: flex-start;
-    background-color: #dfbdb0;
-    border: none;
-}
-.content{
     display: flex;
-    height: 100%;
-    p:nth-child(1){
-        position: relative;
-        font-size: 25px;
-        width: 50%;
-        left: 0%;
-        padding: 40px;
-        color: #fff;
-        opacity: 1;
-        visibility: visible;
-        transition: 0.5s;
-
-    }
-    p:nth-child(3){
-        font-size: 20px;
-        position: relative;
-        width: 50%;
-        padding: 40px;
-        color: #fff;
-        opacity: 0;
-        visibility: hidden;
-        transition: 0.5s;
-    }
-}
-
-.container .card img {
-    position: absolute;
-    z-index: 1;
-    bottom:0px;
-    left: 55%;
-    width:680px;
-    height:550px;
-    transition: 1.2s;
-}
-.container .card:hover img {
-    left: 0%;
-    z-index: 1;
-    height: 550px;
-    width: 600px;
-}
-
-.container .card:hover .content {
-    p:nth-child(1){
-    visibility: hidden;
-    opacity: 0;
-    }
-    p:nth-child(3){
-    visibility:visible;
-    opacity: 1;
-    }
-}
-
-//Seccion Mision y Vision
-
-.container .content1 {
-    max-width: 100vw;
-    height: 100%;
-    z-index: 1;
-    margin: 20px;
-    .mision{
-    display: flex;
-     height: 50vh;
-    }
-    .vision{
-    // position: relative;
-    // bottom: 50px;
-    display: flex;
-    height: 50vh;
-    }
-     p{
-        color: #565255;
-        position: relative;
-        padding: 50px;
-        margin: 0%;
-        text-align: center;
-        z-index:0;
-        font-size: 25px;
-        font-family: 'Raleway', sans-serif;
-    }
-    h3{
-        max-width: 100%;
-        width: 900px;
-        height: 50%;
-        margin: 0%;
-        justify-content: center;
-        align-items: center;
-        font-family: 'Raleway', sans-serif;
-        padding: 25px;
-        z-index: 1;
-        font-size: 35px;
-}
-}   
-.circle{      
-    height: 100vh;
-    background-color: #f2ebe6;
-    display:flex;
-    position: relative;
-    align-items: center;
-.lb {
-    position: absolute;
-    width: 200px;
-    margin:25px;
-    left: 1250px;
-    height: 200px;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    background:
-    #dec9b8;
-}
-.brown {
-    position: absolute;
-    width: 100px;
-    margin:25px;
-    left: 1150px;
-    top:250px;
-    height: 100px;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    background:#dbe1dd;
-}
-.pink1 {
-    position: absolute;
-    width: 150px;
-    margin:25px;
-    bottom: 85px;
-    height: 150px;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    background:#e8ccca;
-}
-.pink2 {
-    position: absolute;
-    width: 200px;
-    left: 1200px;
-    top:-20px;
-    margin:25px;
-    height: 200px;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    background:#e8ccca;
-}
-.red {
-    position: absolute;
-    top: 180px;
-    left: 50px;
-    width: 180px;
-    margin:25px;
-    height: 180px;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    background:#dfbdb0;
-}
- }
-
- //Seccion Contacto
-.container-contacto {
-    background-color: #f2ebe6;
-    position: relative;
-    p{
-  position: relative;
-  bottom: -60px;
-  color: #565255;
-  margin: auto;
-  text-align: center;
-  font-family: 'Raleway';
-  font-size: 20px;
-    }
-    h3 {
-    position: relative;
-    bottom: -60px;
-    color: #565255;
-    font-size:40px;
     text-align: center;
-    font-family: 'Raleway', sans-serif;
-    }
-}
-
-.container .contacto{
-position: absolute;
-left: 50%;
-flex-wrap: wrap;
-justify-content:space-around;
-height: 90%;
-margin: 0%;
-padding: 0%;
-width: 50%;
-
-    img{
-    width:50px;
-    height: 50px;
     align-items: center;
-    border-radius:50%;
-    }
-    .redes{
-        display: flex;
-        justify-content:center;
-        max-width: 100%;
-        padding: 30px;
-        position: relative;
-        p{
-            color: #fff;
-            font-size: 25px;
-            position: absolute;
-            top: 5px;
-            background-color: #daa598;
-            opacity: 0;
-            visibility: visible;
-            transition: 0.5s;
-            padding: 25px 110px 25px 110px;
-            border-radius:1ch;
-        }
-        p:hover{
-            visibility: visible;
-            opacity: 1;
-            color: #fff;
-          margin-right: 255px;
-        }
-
-    }
+    justify-content:space-around;
+}
+.titulo{
+    width: 50%;
+    margin: 30px;
+}
+.swiper {
+    width: 400px;
+    height: 400px;
 }
 
-.formu{
-    position: absolute;
-    max-width: 50%;
-    margin:0%;
-    height: 80%;
-    left: 0%;
-    padding:0%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:center;
-    .mb-3{
-        margin-bottom: 0px;
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide img {
+  width: 100%;
+}
+@media(max-width:780px){
+    .titulo{
+        width: auto;
     }
-    textarea{
-        margin-bottom: 20px;
+    .swiper {
+        width: 300px;
+        height: 300px;
+    }
+    .swiper-slide img{
+        width: 300px;
     }
 }
-
-.form-control-lg{
-    width:400px;
+@media(max-width:480px){
+    .container{
+        flex-direction: column;
+    }
 }
-
-.form-label{
-    margin: 15px;
-}
-
-
-
-//@media ( max-width:480px ) {}

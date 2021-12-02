@@ -1,31 +1,16 @@
-    <nav class="navbar navbar-expand-lg navbar-light navbar-u fixed-top" style="background-color: #e8ccca">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Logotipo</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-            <div class="container">
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <div class="nav ms-auto">
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                      <a class="nav-link" routerLink="active" (click)= "toHome()"  href="#home">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" routerLink="active" (click)= "toAbout()" href="#about">Quienes Somos</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" routeLink="active" (click)= "toMision()" href="#mision">Mision</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" click="toContact()" (click)= "toContact()" routerLink="active" href="#contact">Contacto</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-        </div>
-      </nav>
 
-
-  
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Logotipo</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ms-auto">
+        <a  class="nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" routerLink="/nosotras" routerLinkActive="active">Nosotras</a>
+        <a  class="nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" routerLink="/servicios" routerLinkActive="active">Servicios</a>
+        <a  class="nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" routerLink="/contacto" routerLinkActive="active">Contacto</a>
+      </div>
+    </div>
+  </div>
+</nav>

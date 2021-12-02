@@ -1,0 +1,16 @@
+.container{
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: url(../assets/fondo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+app-footer{
+    position: relative;
+    bottom: 0;
+}

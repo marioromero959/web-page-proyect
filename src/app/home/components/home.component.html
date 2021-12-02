@@ -1,120 +1,17 @@
 
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;1,200;1,300&display=swap" rel="stylesheet">
-
-
-<app-header></app-header>
-
-<!-- Contenido del home -->
-<section id="home">
 <div class="container">
-    <div class="cabecera">
-    <h1>Accede a nuestro curso  .</h1>
-    <button type="button" class="btn btn-outline-secondary ">Click Aqui</button>
+    <div class="titulo">
+        <h1>Estudio Jurídico</h1>
+        <h2>Kulman - Matorras</h2>
     </div>
-<img src="../../../assets/psicologos.jpg" alt="Psicologia">
-</div>
-</section>
-
-<!-- Seccion Quienes Somos -->
-<section class="bg" id="about">
-    <h3 data-aos-duration="1100" data-aos="fade-up">Quienes Somos</h3>
-<div class="container">
-      <div class="card" data-aos-duration="1500" data-aos="fade-up">
-          <div class="content">
-              <p>Somos Lic. Luciana Caruso y Lic Sebastián Segui, profesionales de la psicología, especialistas en el abordaje del trauma y la disociación, con amplia experiencia clínica. Somos amigos que comparten una mirada similar sobre la práctica profesional empática y compasiva y la pasión por la formación de terapeutas comprometidos. ( en acompañar en procesos de sanación)   </p>
-              <img src="../../../assets/juntos.png" alt="Psicologo2" class="one">
-              <p>Esta misma pasión nos llevó a  crear el centro PEyC. El cual brinda capacitación, supervisión y acompañamiento  a terapeutas, con el objetivo de conformar un perfil integrador que combina los últimos avances sobre neurociencia, distintos modelos y técnicas de psicología, trauma y disociación, aunando el mindfulness y las prácticas contemplativas, como así también diferentes propuestas de tratamiento psicoterapéutico para todo aquel que quiera transformar su vida.
-            Es de esta manera que integramos distintos modelos psicológicos,  técnicos y espirituales ya que consideramos fundamental  la coherencia del terapeuta, la empatía y la compasión para estar en absoluto servicio al otro.</p>            
-          </div>
-      </div>
-</div>
-</section>
-
-<!-- Seccion Mision -->
-<section class="bg" id="mision">
-    <div class="container">
-            <div class="circle">
-                <span class="lb" data-aos="flip-left" data-aos-duration="2000"></span>
-                <span class="brown" data-aos="flip-left" data-aos-duration="2000"></span>
-                <span class="pink1" data-aos="flip-left" data-aos-duration="2000"></span>
-                <span class="red" data-aos="flip-left" data-aos-duration="2000"></span>
-                <span class="pink2" data-aos="flip-left" data-aos-duration="2000"></span>
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="./../../../assets/perfilvero.jpg" alt="">
             </div>
-
-            <div class="content1" data-aos="zoom-in" data-aos-duration="1500" >
-                <div class="mision" >
-                    <h3>Mision</h3>
-                    <p>Nos moviliza formar a terapeutas que ayuden a las personas a transformar su padecimiento diario en libertad y armonía.
-                    Conformamos este centro porque creemos que la presencia del terapeuta en estado de conciencia plena, empático y compasivo es lo que le permite al paciente abrirse de manera confiada a su dolencia, a su situación traumática, transitarla para transformarla y que evolucione hacia un estado de integración, y por lo tanto, de plenitud.</p>
-                </div>
-                <div class="vision" >
-                    <p>Ser referentes en la comunidad de terapeutas de trauma y de disociación, empatía y compasión. Contribuyendo a través de nuestras formaciones a que los profesionales sean más coherentes, más empáticos, más compasivos, y por   sobre todo, más comprometidos con su presencia plena, para con el paciente.</p>
-                    <h3>Vision</h3>        
-                </div>
+            <div class="swiper-slide">
+                <img src="./../../../assets/perfilvero.jpg" alt="">
+            </div>
         </div>
-    </div>
-</section>
-    
-<!-- Seccion Contacto -->
-<section class="bg-contact" id="contact">
-    <div class="container-contacto">
-        <h3>Contactanos</h3>
-        <p>Contactate con nosotros mediante </p>
-    </div>
-    <div class="container">
-        <div class="contacto">
-             <div class="redes">
-                <a href="https://www.instagram.com/">
-                <img src="../../../assets/logoubi.png" alt="">
-                </a>
-                <p>Av Dondesea 123</p>
-            </div>
-            <div class="redes">
-                <a href="https://www.instagram.com/">
-                <img src="../../../assets/logotel.png" alt="">
-                </a>
-                <p>+54-91166077559</p>
-            </div>
-            <div class="redes">
-                <a href="https://twitter.com/home">
-                <img src="../../../assets/logoemail.png" alt="">
-                </a>
-                <p>brainspotting.arg@gmail.com</p>
-            </div>
-        <div class="redes">
-            <a href="https://www.instagram.com/">
-            <img src="../../../assets/logoinsta.png" alt="">
-            </a>
-            <p>@psicologia</p>
-        </div>
-        <div class="redes">
-            <a href="https://www.whatsapp.com/">
-            <img src="../../../assets/logofb.png" alt="">
-            </a> 
-            <p>Brainspotting.Argentina</p>
-        </div>
-</div>
-
-<div class="formu">
-    <div class="mb-3 ">
-        <label class="form-label">Nombre</label>
-        <input [formControl]= "name" type="text" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="nombre">
-      </div>
-    <div class="mb-3">
-        <label class="form-label">Ingrese su email</label>
-        <input [formControl]= "email" type="email" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="correo@ejemplo.com">
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-        <textarea [formControl]= "mensaje" class="form-control form-control-lg " id="exampleFormControlTextarea1" rows="3"></textarea>
-        <button type="button" class="btn btn-success" [disabled]= "email.invalid"  (click)= "emailEnviado()">Enviar</button>
       </div>
 </div>
-
-</div>
-</section>
-
-
-    
-<app-footer></app-footer>
