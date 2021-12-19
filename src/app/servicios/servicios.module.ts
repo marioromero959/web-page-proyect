@@ -9,7 +9,7 @@ import { ServiciosComponent } from './componentes/servicios/servicios.component'
   declarations: [ServiciosComponent],
   imports: [
     CommonModule,
-    ServiciosRoutingModule
+    ServiciosRoutingModule,
   ]
 })
 export class ServiciosModule { }

@@ -1,14 +1,39 @@
-<div class="contenedor">
 
+<div class="contenedor">
     <header>
         <h1>Servicios</h1>
-        <h3>Asesoramiento Profesional en tu Reclamo Laboral</h3>
-</header>
+        <h2>Asesoramiento Profesional en tu Reclamo Laboral</h2>
+    </header>
+    <div class="servicios">
+        <div class="caja">
+            <h3>Accidentes y Enfermedades</h3>
+             <button type="button" class="btn btn-outline-light" (click)="open(content)">Ver más</button>
+        </div>
+        <div class="caja">
+            <h3>Despidos</h3>
+            <button type="button" class="btn btn-outline-light" (click)="open(content)">Ver más</button>
+        </div>
+        <div class="caja">
+            <h3>Trabajo en Negro</h3>
+            <button type="button" class="btn btn-outline-light" (click)="open(content)">Ver más</button>
+        </div>
+        <div class="caja">
+            <h3>Otros Reclamos Laborales</h3>
+            <button type="button" class="btn btn-outline-light" (click)="open(content)">Ver más</button>
+        </div>
+    </div>
 
-<div class="container">
-    <div class="caja"><h2>Accidentes y Enfermedades</h2> <a href="#">Ver más</a></div>
-    <div class="caja"><h2>Despidos</h2> <a href="#">Ver más</a></div>
-    <div class="caja"><h2>Trabajo en Negro</h2> <a href="#">Ver más</a></div>
-    <div class="caja"><h2>Otros Reclamos Laborales</h2><a href="#" >Ver más</a></div>
+    <ng-template #content let-modal>
+        <div class="modal-header">
+          <h4 class="modal-title" id="modal-basic-title">Modal</h4>
+        </div>
+        <div class="modal-body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, corporis? Dolore eos sint minus distinctio labore inventore, minima, ipsa ipsum sunt accusamus ducimus tempora nostrum aliquam at excepturi neque? Fugit!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Volver</button>
+        </div>
+      </ng-template>
+      
 </div>
-</div>
+
