@@ -7,7 +7,7 @@
 header{
     width: 100%;
     padding: 50px ;
-    background-color: rgba(128, 128, 128, 0.308);
+    background-color: rgba(118, 215, 245, 0.247);
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -26,7 +26,6 @@ h3{
    margin: 5px;
    height: 20px;
 }
-
 .servicios{
    min-width: 100%;
    display: flex;
@@ -37,7 +36,7 @@ h3{
 }
 .caja{
    margin: 10px;
-   background-color: rgba(98, 104, 105, 0.438);
+   background-color: rgba(67, 93, 100, 0.336);
    color: white;
    display: flex;
    flex-direction: column;
@@ -46,20 +45,18 @@ h3{
    text-align: center;
    height: 250px;
    width: 250px;
-   box-shadow: 0px 3px 0px rgb(85, 81, 81);
+   box-shadow: 0px 3px 0px rgba(55, 68, 68, 0.795);
    border-radius: 20px;
-   border: 2px solid rgba(98, 104, 105, 0.1);
+   border: 2px solid rgba(88, 93, 94, 0.425);
    transition: .5s;
 
 }
 .caja:hover{
-   border: 2px solid #fff;
-}
-// a:hover{
-   // width: 130px;
-   // height: 45px;
-// }
-
+   border: 2px solid rgba(87, 218, 241, 0.747);
+   width: 300px;
+   height: 300px;
+   }
+   
 /* a{
    background-color: rgba(194, 205, 206, 0.582);
    text-decoration: none;
@@ -75,6 +72,7 @@ h3{
 } */
 
 button{
+ /*   color: rgb(13, 14, 14); */
    width: 50%;
    height: 20%;
 }
