@@ -90,7 +90,7 @@ input[type=number] {
 }
 
 .contact-form form p{
-    margin: 0;
+     margin: 0;
     padding: 1em;    
 }
 
@@ -116,15 +116,46 @@ input[type=number] {
 .contact-form  form button:focus{
     background: rgb(70, 169, 194);
     color: rgb(21, 22, 22);
-    transition: background-color 1s ease-out;
+    transition: background-color .8s ease-out;
     outline: 0;
 }
 
 .contact-info{
-    background-color: rgba(58, 57, 57, 0.548);   
+    background-color: rgba(12, 11, 11, 0.548);   
+}
+ 
+.contact-info h4,
+.contact-info ul,
+.contact-info p{
+    text-align: center;
+    margin: 0 0 1rem 0;
 }
 
+.contact-info ul{
+    list-style: none;
+}
+.contact-info ul li{
+    padding: .3em;
+}
 
+@media (min-width: 700px) {
+    body{
+        padding: 0 4rem;
+    }
+    .contact-wraper{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .contact-wraper > *{
+        padding: 2em;
+    }
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p{
+        padding: 1em;
+        text-align: left;
+    }
+}
 
 
 
