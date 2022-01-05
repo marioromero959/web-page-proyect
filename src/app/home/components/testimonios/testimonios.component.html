@@ -1,0 +1,10 @@
+<div class="swiper">
+    <h2>Testimonios</h2>
+    <div class="swiper-wrapper">
+        <div class="swiper-slide" *ngFor="let testimonio of testimonios">
+            <h3>{{testimonio.nombre | uppercase}}</h3>
+            <p>{{testimonio.texto}} </p>
+        </div>
+    </div>
+  </div>
+  

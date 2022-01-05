@@ -1,0 +1,37 @@
+<div class="contenedor">
+<app-banner></app-banner>
+
+<div class="intro">
+    <h2>Estudio de abogadas</h2>
+    <div class="texto">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est unde praesentium enim magnam, animi ab debitis harum voluptatem necessitatibus? Dicta, delectus distinctio consequatur quae necessitatibus aliquam dolorum eos magni. Omnis?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis iste culpa qui accusantium saepe iure commodi voluptate magni aperiam ipsam nisi dolore minima, impedit molestias soluta, maxime dignissimos fugit sint.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est unde praesentium enim magnam, animi ab debitis harum voluptatem necessitatibus? Dicta, delectus distinctio consequatur quae necessitatibus aliquam dolorum eos magni. Omnis?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis iste culpa qui accusantium saepe iure commodi voluptate magni aperiam ipsam nisi dolore minima, impedit molestias soluta, maxime dignissimos fugit sint.
+        </p>
+    </div>
+</div>
+
+<app-equipo></app-equipo>
+
+<app-testimonios></app-testimonios>
+
+<div class="valores">
+    <h3>Algunos de nuestros valores</h3>
+    <div class="espe">
+        <div class="carta" *ngFor="let valor of valores">
+            <h5>
+                {{valor.nombre}}
+            </h5>
+            
+        </div>
+    </div>
+</div>
+
+<div class="contacto">
+    <button type="button" class="btn btn-outline-success">Contactanos</button>
+</div>
+
+</div> 
+

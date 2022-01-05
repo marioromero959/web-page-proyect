@@ -1,0 +1,14 @@
+<div class="contenedor">
+    <h2>Nuestro Equipo</h2>
+    <div class="nosotros">
+        <div class="carta" *ngFor="let carta of cartas">
+            <img [src]="carta.imagen" alt="abogada">
+             <h5>
+                {{carta.nombre}}
+             </h5>
+             <p>
+                {{carta.description}}
+             </p>
+        </div>
+    </div>
+</div>
