@@ -1,0 +1,8 @@
+<div class="swiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide" *ngFor="let imagen of imagenes">
+            <h1>{{imagen.titulo | uppercase}}</h1>
+            <img [src]="imagen.img" alt="">
+        </div>
+    </div>
+  </div>

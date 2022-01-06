@@ -1,5 +1,5 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
-import Swiper,{Autoplay, EffectCube} from 'swiper';
+import Swiper,{Autoplay,Pagination} from 'swiper';
 
 @Component({
   selector: 'app-home',
@@ -8,26 +8,32 @@ import Swiper,{Autoplay, EffectCube} from 'swiper';
 })
 export class HomeComponent implements OnInit, AfterViewInit {
 
+  valores = [
+    {nombre:'Asesoría legal clara y precisa',imagen:''},
+    {nombre:'Honestidad y confianza',imagen:''},
+    {nombre:'Abogacía preventiva',imagen:''},
+    {nombre:'Certeza y transparencia',imagen:''},
+    {nombre:'Responsabilidad',imagen:''},
+  ]
+
+
   constructor() {}
 
   ngOnInit(){}
 
   ngAfterViewInit(){
-    Swiper.use([Autoplay,EffectCube]);
+    Swiper.use([Autoplay,Pagination]);
     const swiper = new Swiper('.swiper', {
-      effect:"cube",
       loop: true,
       autoplay:{
         disableOnInteraction:false,
         delay:2000,
       },
       grabCursor: true,
-        cubeEffect: {
-          shadow: true,
-          slideShadows: true,
-          shadowOffset: 25,
-          shadowScale: 0.94,
-        },
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+      },
     });
   }
 }

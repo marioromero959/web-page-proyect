@@ -1,5 +1,12 @@
-h1,h2,h3,p{
+h1,h2,h3,h4,h5,p,label,input{
     font-family: Raleway;
 }
+:root{
+    --celeste:rgb(87, 218, 241);
+}
+.swiper-pagination-bullet-active {
+    background-color: var(--celeste) ;
+  }
+
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';

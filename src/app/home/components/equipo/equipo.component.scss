@@ -1,0 +1,93 @@
+h2{
+    padding:20px 0 ;
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: Raleway;
+}
+.nosotros{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.carta{
+    width: 400px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 10px;
+}
+
+.vero{
+    background: url('../../../../assets/vero1.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.mica{
+    background-position-x: center !important;
+    background: url('../../../../assets/mica1.jpeg');
+}
+
+h5{
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+}
+p{
+    color: var(--celeste);
+    font-size: 25px;
+    margin-bottom: 0;
+}
+
+.info{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+// Modales
+
+img{
+    width: 400px;
+    height: 400px;
+}
+.modal-body{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.modal-body p {
+    font-size: 10px;
+        color: #000;
+}
+.redes{
+    display: flex;
+    justify-content: space-around;
+}
+a img{
+    width: 40px;
+    height: 40px;
+}
+@media(max-width:650px){
+    h2{
+        text-align: center;
+        font-size: 30px;
+    }
+    .nosotros{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .carta{
+        align-items: normal;
+        justify-content: flex-end;
+        margin-bottom: 10px;
+    }
+    h5{
+        font-size: 20px;
+    }
+    p{
+        font-size: 25px;
+    }    
+
+}

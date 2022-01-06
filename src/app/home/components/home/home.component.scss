@@ -1,0 +1,116 @@
+.contenedor{
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+app-banner{
+    position: relative;
+    top: 0;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 35px;
+    background-color: rgba(119, 120, 121, 0.6);
+}
+h2{
+    text-transform: uppercase;
+    color: #fff;
+    padding: 20px;
+    font-size: 40px;
+    margin: 0;
+}
+.texto{
+    display: flex;
+    justify-content: space-evenly;
+    p{
+        font-size: 1.3em;
+        color: #fff;
+        width: 45%;
+        margin: 30px;
+    }
+}
+
+h3{
+    font-family: 'Raleway';
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    padding: 20px;
+}
+.espe{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid white;
+    flex-wrap: wrap;
+}
+.carta{
+    margin: 20px;
+    width: 15%;
+    height: 200px;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid rgba(143, 111, 43, 0.808);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+    flex-direction: column;
+}
+.carta:hover{
+    border: 2px solid #ffb617ce;
+}
+h5{
+    font-family: Raleway;
+}
+.contacto{
+    padding: 50px;
+}
+
+@media(max-width:480px){
+
+    .intro{
+        flex-direction: column;
+        margin: 10px;
+        padding: 15px;
+        background-color: rgba(119, 120, 121, 0.8);
+    }
+
+    h2{
+        text-transform: uppercase;
+        color: #fff;
+        padding: 10px;
+        font-size: 20px;
+    }
+    .texto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p{
+            text-align: start;
+            font-size: .9em;
+            width: 95%;
+        }
+    }
+    .espe{
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        border: 1px solid white;
+        flex-wrap: wrap;
+    }
+    .carta{
+        margin: 20px;
+        width: 90%;
+        height: 200px;
+        border: 1px solid white;
+    }
+
+}
