@@ -1,4 +1,5 @@
 <div class="contenedor">
+    
 <app-banner></app-banner>
 
 <div class="intro">
@@ -17,21 +18,7 @@
 
 <app-testimonios></app-testimonios>
 
-<div class="valores">
-    <h3>Algunos de nuestros valores</h3>
-    <div class="espe">
-        <div class="carta" *ngFor="let valor of valores">
-            <h5>
-                {{valor.nombre}}
-            </h5>
-            
-        </div>
-    </div>
-</div>
-
-<div class="contacto">
-    <button type="button" class="btn btn-outline-success">Contactanos</button>
-</div>
+<app-contacto></app-contacto>
 
 </div> 
 

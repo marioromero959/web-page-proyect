@@ -4,21 +4,28 @@ h2{
     color: #fff;
 }
 .swiper{
-    border-top: 1px solid white;
-    max-width: 80% !important;
+    max-width: 80%;
     margin-top: 20px;
 }
 .swiper-slide{
     justify-content: center;
-    background-color: rgba(119, 120, 121, 0.432);
+    padding: 20px;
+    background-color: rgba(119, 120, 121, 0.832);
 }
 p,h3{
     text-align: center;
     width: 75%;
-    padding: 20px;
+    padding: 10px;
     margin: auto;
     color: #fff;
 }
 p{
+    padding-bottom: 20px;
     font-size: 25px;
+}
+
+@media(max-width:650px){
+    p{
+        font-size: 15px;
+    }
 }

@@ -1,5 +1,5 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
-import Swiper,{Autoplay} from 'swiper';
+import Swiper,{Autoplay,Pagination} from 'swiper';
 
 @Component({
   selector: 'app-home',
@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   ngOnInit(){}
 
   ngAfterViewInit(){
-    Swiper.use([Autoplay]);
+    Swiper.use([Autoplay,Pagination]);
     const swiper = new Swiper('.swiper', {
       loop: true,
       autoplay:{
@@ -30,6 +30,10 @@ export class HomeComponent implements OnInit, AfterViewInit {
         delay:2000,
       },
       grabCursor: true,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+      },
     });
   }
 }

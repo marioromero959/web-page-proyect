@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-equipo',
@@ -6,23 +7,27 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./equipo.component.scss']
 })
 export class EquipoComponent implements OnInit {
+  closeResult = '';
 
-  cartas = [
-  {
-    nombre:'María Veronica Kulman',
-    imagen:'../../../../assets/vero1.jpeg',
-    description:'Abogada'
-  },
-  {
-    nombre:'Micaela Matorras',
-    imagen:'../../../../assets/mica1.jpeg',
-    description:'Abogada'
-  },
-  ]
-
-  constructor() { }
+  constructor(private modalService: NgbModal) { }
 
   ngOnInit(): void {
   }
+  open(content) {
+    this.modalService.open(content,{size:'xl'}).result.then((result) => {
+      this.closeResult = `Closed with: ${result}`;
+    }, (reason) => {
+      this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
+    });
+  }
 
+  private getDismissReason(reason: any): string {
+    if (reason === ModalDismissReasons.ESC) {
+      return 'by pressing ESC';
+    } else if (reason === ModalDismissReasons.BACKDROP_CLICK) {
+      return 'by clicking on a backdrop';
+    } else {
+      return `with: ${reason}`;
+    }
+  }
 }

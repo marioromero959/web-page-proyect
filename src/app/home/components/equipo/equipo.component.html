@@ -1,14 +1,101 @@
 <div class="contenedor">
     <h2>Nuestro Equipo</h2>
     <div class="nosotros">
-        <div class="carta" *ngFor="let carta of cartas">
-            <img [src]="carta.imagen" alt="abogada">
-             <h5>
-                {{carta.nombre}}
-             </h5>
-             <p>
-                {{carta.description}}
-             </p>
+        <div class="carta vero" (click)="open(vero)">
+                <div class="info">
+                    <h5>María Veronica Kulman</h5>
+                    <p>Abogada</p>
+                </div>
+        </div>
+        <div class="carta mica" (click)="open(mica)">
+            <div class="info">
+            <h5>Micaela Matorras</h5>
+            <p>Abogada</p>
+            </div>
         </div>
     </div>
 </div>
+
+
+
+<ng-template #vero let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Veronica Kulman</h4>
+    </div>
+    <div class="modal-body">
+        <img src="../../../../assets/vero1.jpeg" alt="">
+        <ul>
+            <h6>Educación</h6>
+            <li>Abogacía (2015)
+                Pontificia Universidad Católica Argentina de Rosario, Argentina.</li>
+            <li>Profesorado Superior Universitario  (2018)
+                Pontificia Universidad Católica Argentina de Rosario, Argentina.</li>
+            <li>Diplomatura en Neurociencias aplicada al ámbito socioeducativo (2019)
+                Universidad Abierta Interamericana</li>
+            <li>Diplomatura en Derecho previsional (2020)
+                Grupo Professional</li>
+            <li>Mediaciòn, Negoción y resolución de conflicos ( en curso)
+                A.A.M.I (Asoc. Argentina de Mediación Interdisciplinaria)</li>
+        </ul>
+
+        <ul>
+            <h6>Experiencia Laboral</h6>
+            <li>Municipalidad de la ciudad de Gualeguay (01/2020- actualidad)
+                -Asesora legal. Responsable de área. Oficina de Defensa del Consumidor. (06/2020- actualidad).</li>
+            <li>Analista legal Senior. Dirección de Producción. Secretaría de Hacienda y Producción. (01/2020 -05/2020)</li>
+            <li>Estudio Júridico propio (07/2018- actualidad)
+                Causas civiles. Derecho del consumidor. Derecho previsional.</li>
+            <li>Docente particular (2015-  actualidad)</li>
+            <br>
+            <h6>Redes Sociales</h6>
+            <div class="redes">
+                <a href=""><img src="../../../../assets/logowpp.png" alt=""></a>
+                <a href=""><img src="../../../../assets/logoinsta1.png" alt=""></a>
+            </div>
+        </ul>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-success" (click)="modal.close('Save click')">Volver</button>
+    </div>
+  </ng-template>
+
+  <ng-template #mica let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Micaela Matorras</h4>
+    </div>
+    <div class="modal-body">
+        <img src="../../../../assets/mica1.jpeg" alt="">
+        <ul>
+            <h6>Educación</h6>
+            <li>Abogacía (2015)
+                Pontificia Universidad Católica Argentina de Rosario, Argentina.</li>
+            <li>Profesorado Superior Universitario  (2018)
+                Pontificia Universidad Católica Argentina de Rosario, Argentina.</li>
+            <li>Diplomatura en Neurociencias aplicada al ámbito socioeducativo (2019)
+                Universidad Abierta Interamericana</li>
+            <li>Diplomatura en Derecho previsional (2020)
+                Grupo Professional</li>
+            <li>Mediaciòn, Negoción y resolución de conflicos ( en curso)
+                A.A.M.I (Asoc. Argentina de Mediación Interdisciplinaria)</li>
+        </ul>
+
+        <ul>
+            <h6>Experiencia Laboral</h6>
+            <li>Municipalidad de la ciudad de Gualeguay (01/2020- actualidad)
+                -Asesora legal. Responsable de área. Oficina de Defensa del Consumidor. (06/2020- actualidad).</li>
+            <li>Analista legal Senior. Dirección de Producción. Secretaría de Hacienda y Producción. (01/2020 -05/2020)</li>
+            <li>Estudio Júridico propio (07/2018- actualidad)
+                Causas civiles. Derecho del consumidor. Derecho previsional.</li>
+            <li>Docente particular (2015-  actualidad)</li>
+            <br>
+            <h6>Redes Sociales</h6>
+            <div class="redes">
+                <a href=""><img src="../../../../assets/logowpp.png" alt=""></a>
+                <a href=""><img src="../../../../assets/logoinsta1.png" alt=""></a>
+            </div>
+        </ul>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-success" (click)="modal.close('Save click')">Volver</button>
+    </div>
+  </ng-template>
