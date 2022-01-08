@@ -1,4 +1,6 @@
-
+.contenedor{
+    padding: 5em;
+}
 .content{
     background-color: rgba(71, 70, 70, 0.555);
     color: #fff;
@@ -75,6 +77,9 @@ ul{
     padding: 0;
 }
 @media (min-width: 900px) {
+    .contenedor{
+        padding: 0;
+    }
     .contact-wraper{
         display: grid;
         grid-template-columns: 2fr 1fr;
@@ -87,6 +92,9 @@ ul{
     }
 }
 @media (max-width: 480px) {
+    .contenedor{
+        padding: 0;
+    }
     h1{
         font-size: 2em;
         padding: 10px;
@@ -100,7 +108,11 @@ ul{
     div{
         margin: 5px;
     }
-
+}
+@media(max-width:320px){
+    .contact-info ul li:nth-child(3){
+        font-size: 12px;
+    }
 }
 
 

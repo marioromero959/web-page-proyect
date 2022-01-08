@@ -16,7 +16,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
     {nombre:'Responsabilidad',imagen:''},
   ]
 
-
   constructor() {}
 
   ngOnInit(){}
