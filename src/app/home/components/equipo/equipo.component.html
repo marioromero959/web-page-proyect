@@ -1,5 +1,5 @@
 <div class="contenedor">
-    <h2>Nuestro Equipo</h2>
+    <h2>Nuestro <span>Equipo</span></h2>
     <div class="nosotros">
         <div class="carta vero" (click)="open(vero)">
                 <div class="info">
@@ -24,6 +24,7 @@
     </div>
     <div class="modal-body">
         <img src="../../../../assets/vero1.jpeg" alt="">
+        <div class="texto">
         <ul>
             <h6>Educación</h6>
             <li>Abogacía (2015)
@@ -53,6 +54,7 @@
                 <a href=""><img src="../../../../assets/logoinsta1.png" alt=""></a>
             </div>
         </ul>
+    </div>
     </div>
     <div class="modal-footer">
       <button type="button" class="btn btn-success" (click)="modal.close('Save click')">Volver</button>
@@ -65,6 +67,8 @@
     </div>
     <div class="modal-body">
         <img src="../../../../assets/mica1.jpeg" alt="">
+        <div class="texto">
+
         <ul>
             <h6>Educación</h6>
             <li>Abogacía (2015)
@@ -94,6 +98,8 @@
                 <a href=""><img src="../../../../assets/logoinsta1.png" alt=""></a>
             </div>
         </ul>
+    </div>
+
     </div>
     <div class="modal-footer">
       <button type="button" class="btn btn-success" (click)="modal.close('Save click')">Volver</button>

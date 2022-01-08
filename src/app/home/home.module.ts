@@ -11,6 +11,7 @@ import { TestimoniosComponent } from './components/testimonios/testimonios.compo
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { MapaComponent } from './components/mapa/mapa.component';
 import { ServiciosComponent } from './components/servicios/servicios.component';
+import { IntroComponent } from './components/intro/intro.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ServiciosComponent } from './components/servicios/servicios.component';
   TestimoniosComponent,
   ContactoComponent,
   MapaComponent,
-  ServiciosComponent
+  ServiciosComponent,
+  IntroComponent
 ],
   imports: [
     CommonModule,

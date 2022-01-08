@@ -11,18 +11,6 @@ const routes: Routes = [
     path: 'home',
     loadChildren: () => import('../app/home/home.module').then(m => m.HomeModule)
   },
-  {
-    path: 'nosotras',
-    loadChildren: () => import('../app/about/about.module').then(m => m.AboutModule)
-  },
-  {
-    path: 'servicios',
-    loadChildren: () => import('../app/servicios/servicios.module').then(m => m.ServiciosModule)
-  },
-  {
-    path: 'contacto',
-    loadChildren: () => import('../app/contacto/contacto.module').then(m => m.ContactoModule)
-  }
 ];
 
 @NgModule({
